@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title> Pick up a movie of your choice </title>
+    <link rel="stylesheet" href="test.css">
+    <script src="test.js"> </script>
+    <script>
+            function fun(){
+                let a= document.getElementById("select_movie")
+                let b= document.getElementById("movie_name")
+                let c= document.getElementById("Ticket_price")
+
+                switch(a.value){
+                    case "25": b.innerHTML = "Main Tera Hero"
+                    c.innerHTML = a.value+"$"
+                    break;
+
+                    case "20": b.innerHTML = "Machete"
+                    c.innerHTML = a.value+"$"
+                    break;
+
+                    case"13": b.innerHTML = "Baaghi"
+                    c.innerHTML = a.value+"$"
+                    break;
+
+                }
+            }
+            function fun3(e){
+                let count = 0;
+                let t = document.getElementById("select_movie")
+                let d = document.querySelectorAll(".c1")
+
+                for(var i=0;i<=d.length-1;i++){
+                    if(d[i].checked==true){
+                        count++
+
+                    }
+
+
+                }
+                let f = document.getElementById("one")
+                let g = document.getElementById("two")
+                f.innerHTML = count;
+                g.innerHTML = count*t.value
+                alert(count)
+
+            }
+    </script>
+</head>
+<body>
+            
+        <label for="select_movie">Pick a movie</label>
+        <select id="select_movie" name="movies" size="1" onchange="fun()">
+                <option value="0">Select movie</option>
+                <option value="25">Main Tera Hero($25)</option>
+                <option value="20">Machete($20)</option>
+                <option value="13">Baaghi($13)</option>
+            
+            </select><br><br>
+            <input type="submit" onclick="fun3()">
+
+
+
+            <ul id="box" type=none>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio"  onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+
+            </ul>
+            <ul id="box" type=none>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio"  onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+            </ul>
+
+
+            
+            <ul id="box" type=none>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio"  onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+            </ul>
+
+                
+            
+            <ul id="box" type=none>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio"  onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+            </ul>
+               
+            <ul id="box" type=none>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio"  onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+            </ul>
+               
+            <ul id="box" type=none>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio"  onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+            </ul>
+               
+            <ul id="box" type=none>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio"  onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+            </ul>
+                 
+            <ul id="box" type=none>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio"  onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                
+            </ul>
+            <ul id="box" type=none>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio"  onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                
+            </ul>
+            <ul id="box" type=none>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio"  onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                <li><input class="c1" type="radio" onclick="fun2()"></li>
+                
+            </ul> 
+        </div> 
+        <label>Movie selected:</label>
+        <span id="movie_name"></span><br>
+        <label>Ticket Price:</label>
+        <span id="ticket_price"></span>
+        <div id="boxex">
+            <span id="one"></span>
+            <span id="two"></span>
+
+        
+            <label>   SELECT TYPE OF CARD 
+            </label>
+            <select>
+                <option>Visa</option>
+                <option>Master Card </option>
+
+                <option> IKEA</option>
+                <option>DEBIT CARD</option>
+                <option>Credit Card</option>
+
+                </select><br><b>
+                    <button>submit</button>
+    </body>
+</html>
